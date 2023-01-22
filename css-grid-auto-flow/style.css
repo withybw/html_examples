@@ -1,0 +1,21 @@
+#grid {
+  display: grid;
+  height: 100px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 100px;
+  grid-auto-flow: dense;
+}
+
+#item1 {
+  border: 5px solid lime;
+}
+
+#item3 {
+  border: 5px solid yellow;
+  grid-column: 2 / 4;
+}
+
+#item2 {
+  border: 5px solid blue;
+  grid-column: span 2 / 7;
+}
