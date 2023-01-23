@@ -1,0 +1,35 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+	justify-content: center;
+  padding: 18px;
+  border: 3px solid blue;
+  border-radius: 1rem;
+  font-family: var(--ff-mono);
+}
+
+p.block {
+  background-color: #9b59b6;
+}
+span.inline {
+  background-color: #1abc9c;
+}
+
+span.inline-block {
+  background-color: #e67e22;
+  display: inline-block;
+  border: 3px solid #34495e;
+  padding: 18px;
+  border-radius: 1rem;
+}
+
+.wrap > * {
+  width: 60%;
+}
+
+:root {
+  --first-color: #16f;
+  --second-color: #ff7;
+  --ff-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
